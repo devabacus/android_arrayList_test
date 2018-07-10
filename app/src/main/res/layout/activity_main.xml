@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_test"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp" />
+
+    <EditText
+        android:id="@+id/et_index"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_test"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp" />
+
+    <EditText
+        android:id="@+id/et_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_index"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp" />
+
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Array list lesson!"
+        app:layout_constraintTop_toBottomOf="@id/btn_test"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp" />
+
+
+    <Button
+        android:id="@+id/btn_test"
+        app:layout_constraintTop_toBottomOf="@id/et_test"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:layout_marginTop="20dp"
+         />
+
+
+    <Button
+        android:id="@+id/btn_insert"
+        app:layout_constraintTop_toTopOf="@id/btn_test"
+        app:layout_constraintStart_toEndOf="@id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="вставить"
+/>
+    <Button
+        android:id="@+id/btn_replace"
+        app:layout_constraintTop_toTopOf="@id/btn_insert"
+        app:layout_constraintStart_toEndOf="@id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="заменить"
+/>
+    <Button
+        android:id="@+id/btn_clear"
+        app:layout_constraintTop_toTopOf="@id/btn_test"
+        app:layout_constraintStart_toEndOf="@id/btn_replace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="очистить"
+/>
+
+
+
+</android.support.constraint.ConstraintLayout>
